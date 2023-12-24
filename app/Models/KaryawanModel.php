@@ -12,7 +12,7 @@ class KaryawanModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama','gaji','denda_keterlambatan','jumlah_absensi'];
+    protected $allowedFields    = ['nama','gaji','denda_keterlambatan','jumlah_absensi','gaji_didapat'];
 
     // Dates
     protected $useTimestamps = false;

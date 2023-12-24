@@ -52,7 +52,7 @@
                    <td><?= $k['gaji']; ?></td>
                    <td><?= $k['jumlah_absensi']; ?></td>
                    <td><?= $k['denda_keterlambatan']; ?></td>
-                   <td></td>
+                   <td><?= $k['gaji_didapat'] ?></td>
                    <td><a href="<?= site_url('/dashboard/printpreview/'.$k['id']) ?>" class="btn btn-primary">Print</a></td>
                 </tbody>
                 <?php endforeach; ?>

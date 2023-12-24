@@ -50,8 +50,7 @@
     <input type="text" name="denda_keterlambatan" class="form-control" id="denda_keterlambatan" placeholder="Masukkan nominal denda per karyawan absen">
   </div>
   <div class="form-group">
-  <label for="">Gaji Didapat</label>
-  <input type="text" name="gaji_didapat" id="hasil" class="form-control" >
+  <input type="hidden" name="gaji_didapat" id="hasil" class="form-control" >
   </div>
   <button type="button" onclick="perhitunganAndSubmit()" class="btn btn-success">Submit</button>
 </form>
@@ -74,8 +73,9 @@
     if (!isNaN(gaji) && !isNaN(absen) && !isNaN(denda)) {
             var result = gaji - absen * denda;
 
-            // Set the value of the "gaji_didapat" input field
             document.getElementById("hasil").value = result;
+
+            document.getElementsByName("gaji_didapat")[0].value = result;
 
             // Submit the form
             document.getElementById("karyawanForm").submit();

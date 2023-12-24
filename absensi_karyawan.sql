@@ -28,7 +28,7 @@ CREATE TABLE `jadwal` (
   `jam_masuk` time NOT NULL,
   `jam_pulang` time NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,6 +37,7 @@ CREATE TABLE `jadwal` (
 
 LOCK TABLES `jadwal` WRITE;
 /*!40000 ALTER TABLE `jadwal` DISABLE KEYS */;
+INSERT INTO `jadwal` VALUES (1,'Senin','21:46:00','18:46:00');
 /*!40000 ALTER TABLE `jadwal` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +56,7 @@ CREATE TABLE `karyawan` (
   `denda_keterlambatan` varchar(30) DEFAULT NULL,
   `gaji_didapat` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +65,7 @@ CREATE TABLE `karyawan` (
 
 LOCK TABLES `karyawan` WRITE;
 /*!40000 ALTER TABLE `karyawan` DISABLE KEYS */;
-INSERT INTO `karyawan` VALUES (1,'Vior','15000000','4','100000',''),(2,'Chateez','15000000','4','200000',''),(3,'Onad','1500000','3','100000',''),(4,'Kenji','1400000','3','100000',''),(5,'Deddy','15000000','20','100000',''),(6,'Dea','6000000','6','150000',''),(7,'Dendi','15000000','10','100000',''),(8,'Johnny','15000000','4','100000','');
+INSERT INTO `karyawan` VALUES (1,'David','9000000','9','100000','8100000');
 /*!40000 ALTER TABLE `karyawan` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -106,4 +107,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-23 17:16:38
+-- Dump completed on 2023-12-24 20:26:41
