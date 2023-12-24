@@ -32,18 +32,18 @@
     <div class="container">
         <h3>Master Data Karyawan</h3>
         <br>
-    <form method="POST" action="<?= site_url('/jadwal/post') ?>">
+    <form method="POST" action="<?= site_url('/jadwal/tambah/post') ?>">
   <div class="form-group">
     <label for="exampleInputEmail1">Hari</label>
     <input type="text" name="hari" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Jam Masuk</label>
-    <input type="time" name="jam_masuk" class="form-control" id="gaji" placeholder="Masukkan nominal gaji">
+    <input type="time" name="jam_masuk" class="form-control">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Jam Pulang</label>
-    <input type="time" name="jam_pulang" class="form-control" id="jumlah_absensi" placeholder="Jumlah berapa hari karyawan tidak masuk / absen">
+    <input type="time" name="jam_pulang" class="form-control">
   </div>
   <button type="submit" class="btn btn-success">Submit</button>
 </form>

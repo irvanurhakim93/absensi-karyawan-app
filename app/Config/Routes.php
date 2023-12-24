@@ -19,4 +19,4 @@ $routes->get('/pdfexample/export','SlipGajiController::generate');
 //hari & jam kerja
 $routes->get('/jadwal','JadwalController::index');
 $routes->get('/jadwal/tambah','JadwalController::tambahjadwal');
-$routes->post('/jadwal/post','JadwalController::post');
+$routes->post('/jadwal/tambah/post','JadwalController::post');

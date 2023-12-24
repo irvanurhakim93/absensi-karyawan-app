@@ -20,7 +20,7 @@ class JadwalController extends BaseController
 
     public function post()
     {
-        $model = new Jadwal();
+        $model = new Jadwal;
         $hari = $this->request->getPost('hari');
         $jam_masuk = $this->request->getPost('jam_masuk');
         $jam_pulang = $this->request->getPost('jam_pulang');
@@ -35,7 +35,7 @@ class JadwalController extends BaseController
 
         // var_dump($hari,$jam_masuk,$jam_pulang);
 
-        // return $this->response->redirect(site_url('/jadwal'));
+        return $this->response->redirect(site_url('/jadwal'));
     }
 }
 
