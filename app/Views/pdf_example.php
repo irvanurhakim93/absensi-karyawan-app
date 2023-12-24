@@ -10,7 +10,7 @@
 
 <body>  
 <h2>Data Mahasiswa </h2>  
-<a href="<?php echo site_url('pdf/generate') ?>">  
+<a href="<?php echo site_url('/pdfexample/export') ?>">  
     Download PDF  
 </a>  
 <table border=1 width=80% cellpadding=2 cellspacing=0 style="margin-top: 5px; text-align:center">  

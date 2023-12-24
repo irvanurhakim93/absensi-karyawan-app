@@ -9,7 +9,7 @@ class SlipGajiController extends BaseController
 {
     public function index()
     {
-        return view('slip_gaji');
+        return view('pdf_example');
     }
 
     public function generate()
@@ -20,7 +20,7 @@ class SlipGajiController extends BaseController
         $dompdf = new Dompdf();
 
         // load HTML content
-        $dompdf->loadHtml(view('slip_gaji'));
+        $dompdf->loadHtml(view('pdf_example'));
 
         // (optional) setup the paper size and orientation
         $dompdf->setPaper('A4', 'landscape');

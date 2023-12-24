@@ -8,9 +8,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Halaman Slip Gaji</title>
+
+    <style>
+        @media print {
+            button {
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 <body>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +42,7 @@
 </nav>
 
     <div class="container">
-    <a href="<?php echo site_url('/dashboard/print/download') ?>" class="btn btn-primary">  
-    Unduh PDF  
+    <button class="btn btn-primary" onclick="printPage()">Print Slip Gaji</button>
         </a>
         <br>
         <br>
@@ -54,5 +66,11 @@
         </table>
        
     </div>
+    <script>
+            function printPage() {
+                window.print();
+            }
+    </script>
 </body>
+
 </html>

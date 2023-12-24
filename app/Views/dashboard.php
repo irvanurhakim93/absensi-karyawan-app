@@ -53,7 +53,7 @@
                    <td><?= $k['jumlah_absensi']; ?></td>
                    <td><?= $k['denda_keterlambatan']; ?></td>
                    <td></td>
-                   <td><a href="<?= site_url('/dashboard/print/'.$k['id']) ?>" class="btn btn-primary">Print</a></td>
+                   <td><a href="<?= site_url('/dashboard/printpreview/'.$k['id']) ?>" class="btn btn-primary">Print</a></td>
                 </tbody>
                 <?php endforeach; ?>
         </table>

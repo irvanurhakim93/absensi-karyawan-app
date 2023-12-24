@@ -61,19 +61,15 @@ class KaryawanController extends BaseController
 
     }
 
-    public function download()
+    public function generatepdf()
     {
 
         $filename = date('y-m-d-H-i-s') . '-laporan-slip-gaji';
-        
-        $model = new KaryawanModel();
-        $data['downloadable'] = $model->where('id', $id)->first();
-        $options = new Options();
         $options->set('isHtml5ParserEnabled', true);
         $options->set('isPhpEnabled', true);
         $dompdf = new Dompdf($options);
-
-        $html = view('halaman_slip',$data);
+        // $data['printable'] = $model->where('id',$id)->first();
+        $html = view('halaman_slip');
         $dompdf->loadHtml($html);
 
         $dompdf->setPaper('A4', 'landscape');
